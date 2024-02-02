@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+}
+
+.bounding {
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem {
+    transform: translateY(100%);
+}
+
+#main {
+    width: 100%;
+    background-color: black;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#nav {
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#h-right {
+    display: flex;
+}
+
+#heading {
+    margin-top: 90px;
+
+}
+
+#heading h1 {
+    line-height: 0.9;
+    opacity: 0.6;
+    margin-left: 30px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    word-spacing: 100px;
+}
+
+#heading #second-h1 {
+    margin-left: 200px;
+}
+
+.blocktext {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    /* background-color: blueviolet; */
+
+}
+
+.blocktext h5 {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 4;
+}
+
+#smallHeadings {
+    margin-top: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#smallHeadings h5 {
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: .7vw;
+    font-size: 1.1vw;
+    word-spacing: 3px;
+}
+
+#herofooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+    padding: 0 2vw;
+    width: 100%;
+}
+
+#herofooter a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: .1vw;
+    font-weight: 500;
+}
+
+#iconset {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 1vw;
+}
+
+#herofooter .circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #888;
+}
+
+#second {
+    width: 100%;
+    /* min-height: 200vh; */
+    padding-right: 10vw;
+    padding-left: 3vw;
+    background-color: black;
+    padding-top: 200px;
+    color: white;
+    position: relative;
+}
+
+.elem {
+    width: 100%;
+    padding: 3vw 0;
+    border-top: 1px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elem h1 {
+    text-transform: uppercase;
+    font-size: 7vw;
+    opacity: .6;
+}
+
+.elem h6 {
+    font-size: 1vw;
+}
+
+.elem-last {
+    border-bottom: 1px solid #888;
+}
+
+.elem img {
+    height: 50%;
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+}
+
+#about {
+    width: 100%;
+    padding: 10vw 10vw;
+    padding-left: 37vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#about img {
+    width: 250px;
+}
+
+#textabout {
+    width: 27rem;
+}
+
+#textabout h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p {
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#textabout a {
+    padding: 8px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#subscribe {
+    background-color: black;
+    color: white;
+    padding: 30px 40px;
+    padding-bottom: 13vw;
+}
+
+#subscribe h5 {
+    opacity: .6;
+    margin-bottom: 8px;
+}
+
+#subscribe h3 {
+    font-size: 17px;
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    padding-bottom: 1vw;
+}
+
+#footerleft {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+}
+
+#footerright {
+    display: flex;
+    gap: 50px;
+}
+
+#footerright a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
